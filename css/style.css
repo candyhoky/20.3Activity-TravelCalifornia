@@ -1,0 +1,388 @@
+body {
+    margin: 0;
+    font-family: poppins;
+}
+
+:root {
+    --excitement: #FFA300; 
+    --relaxation: #1788C1;
+    --charcoal: #333333;
+    --lightGrey: #CECECE;
+    --darkGrey: #747474;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1rem;
+    color: var(--excitement);
+    line-height: 1rem;
+}
+
+h4 {
+    font-size: 1rem;
+    color: white;
+    line-height: 1rem;
+    font-weight: 500;
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+.top-nav {
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    position: absolute;
+    z-index: 1;
+    height: 100px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links .nav-links-wrapper {
+    display: inline-block;
+    padding-left: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: white;
+}
+
+.hero {
+    width: 100vw;
+    height: 90vh;
+    background-image: url(../images/hero-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.section-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 1 / 13;
+    justify-content: center;
+}
+
+.experience-section {
+    width: 90%;
+    margin: 0px auto;
+    display: grid;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    grid-template-columns: repeat(12, 1fr);
+    /* grid-template-rows: 40% 60%; */
+    gap: 0.5rem;
+    justify-content: center;
+    /* border: 1px solid var(--excitement); */
+    position: relative;
+    top: -50px;
+    border-radius: 1rem;
+    background-color: white;
+    box-shadow: 5px 10px 50px 0px var(--lightGrey);
+}
+
+.experience-card-1 {
+    grid-column: 1 / 5;
+    background-image: url(../images/book-flight-visual.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+}
+
+.experience-card-2 {
+    grid-column: 5 / 9;
+    background-image: url(../images/reservation-visual.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+}
+
+.experience-card-3 {
+    grid-column: 9 / 13;
+    background-image: url(../images/plan-visual.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+}
+
+.card-title-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.card-title-wrapper h3 {
+    margin-bottom: 0px;
+}
+
+.icons {
+    height: 20px;
+}
+
+.divider {
+    width: 100%;
+    height: 2px;
+    border-bottom: 2px solid var(--excitement);
+    margin: 1rem 0;
+}
+
+.card-wrapper {
+    padding: 1rem;
+    background-color: rgba(51, 51, 51, 0.8);
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: height 500ms ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.card-details p {
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.card-wrapper:hover {
+    height: 100%;
+}
+
+.cta-button {
+    background-color: var(--excitement);
+    border-radius: 5px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    border: 1px solid var(--excitement);
+}
+
+.cta-button:hover {
+    background-color: white;
+    border: 1px solid var(--excitement);
+}
+
+.cta-button a {
+    font-size: 0.8rem;
+    color: var(--charcoal);
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+}
+
+.cta-button a:hover {
+    color: var(--excitement);
+    font-weight: 800;
+}
+
+.destinations-section {
+    width: 100%;
+    margin: 0px auto;
+    display: grid;
+    padding-top: 5rem;
+    padding-bottom: 2.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    grid-template-columns: repeat(12, 1fr);
+    /* grid-template-rows: 40% 60%; */
+    gap: 0.5rem;
+    justify-content: center;
+    /* border: 1px solid var(--excitement); */
+    position: relative;
+    top: -50px;
+    border-radius: 1rem;
+}
+
+.destinations-cards {
+    height: 450px;
+    border-radius: 0.5rem;
+    background-color: white;
+    display: block;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* flex-direction: column; */
+    box-shadow: 2px 2px 10px 0px var(--lightGrey);
+    transition: box-shadow 300ms ease-in-out;
+}
+
+.destinations-cards:hover {
+    box-shadow: 5px 5px 20px 0px var(--lightGrey);
+}
+
+.destinations-card-wrapper {
+    grid-column: 1 / 13;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.destination-details {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 1rem 0rem 1rem;
+    padding: 1rem 1rem 0rem 1rem;
+    border-radius: 0.2rem 0.2rem 0rem 0rem;
+    background-color: white;
+    position: relative;
+    top: -30px;
+}
+
+.details-top h4 {
+    color: var(--excitement);
+}
+
+.destination-details p {
+    font-size: 0.6rem;
+}
+
+.destination-details a {
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+.details-top {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: baseline
+}
+
+.star-rating {
+    display: flex;
+    align-items: center;
+}
+
+.star {
+    font-size: 0.7rem;
+    gap: 0.1rem;
+    color: var(--excitement);
+}
+
+#destinations-1 {
+    grid-column: 1 / 5;
+    /* background-image: url(../images/yosemite.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 70%; */
+}
+
+#destination-visual-1 {
+    background-image: url(../images/yosemite.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 70%;
+    border-radius: 0.5rem 0.5rem 0 0;
+    transition: background-size 500ms ease-in-out;
+}
+
+#destinations-2 {
+    grid-column: 5 / 9;
+}
+
+#destination-visual-2 {
+    background-image: url(../images/joshua-tree.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 70%;
+    border-radius: 0.5rem 0.5rem 0 0;
+    transition: background-size 500ms ease-in-out;
+}
+
+#destinations-3 {
+    grid-column: 9 / 13;
+}
+
+#destination-visual-3 {
+    background-image: url(../images/san-francisco.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 70%;
+    border-radius: 0.5rem 0.5rem 0 0;
+    transition: background-size 500ms ease-in-out;
+}
+
+.enlarge-visual {
+    background-size: 200%;
+}
+
+.subscribe-section {
+    width: 100%;
+    height: 80vh;
+    background-image: url(../images/bridge-overlay.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.subscribe-section h2 {
+    color: var(--excitement);
+}
+
+.subscribe-section p {
+    color: white;
+}
+
+.subscribe-form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+form button {
+    color: white;
+    border-radius: 0;
+}
+
+.footer {
+    width: 100%;
+    height: 10vh;
+    background-color: var(--charcoal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* box-shadow: 5px 10px 50px 0px var(--lightGrey); */
